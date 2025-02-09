@@ -1,4 +1,5 @@
 import java.util.*;
+//Time Complexity : O(n^2)
 public class Diagonal {
     public static int diagonalSum(int matrix[][]) {
         int sum = 0;
