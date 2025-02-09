@@ -1,4 +1,5 @@
 import java.util.*;
+//Time Complexity : O(n+m)
 public class SearchInSortedMat{
     public static boolean staircaseSearch(int matrix[][], int key){
         int row = 0, col = matrix[0].length-1;
