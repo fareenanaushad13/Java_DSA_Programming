@@ -1,4 +1,6 @@
 public class IsStringPalindrome{
+
+    //Time Complexity : O(n)
     public static boolean isPalindrome(String str){
         for(int i=0;i<str.length()/2;i++){
             int n = str.length();
