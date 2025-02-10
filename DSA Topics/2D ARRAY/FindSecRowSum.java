@@ -1,6 +1,5 @@
 import java.util.*;
 
-//Time Complexity: O(n^2)
 public class FindSecRowSum{
     public static void main(String args[]){
         int nums[][] = {{3,6,1},{6,7,5},{14,13,1}};
