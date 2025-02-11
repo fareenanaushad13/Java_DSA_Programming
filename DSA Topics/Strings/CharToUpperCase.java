@@ -1,4 +1,6 @@
 public class CharToUpperCase {
+
+    //Time Complexity: O(n)
     public static String toUpperCase(String str) {
         if (str == null || str.isEmpty()) return str; 
         
