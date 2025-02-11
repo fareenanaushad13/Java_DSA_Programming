@@ -1,4 +1,6 @@
 public class LargestString{
+
+    //Time Complexity: O(x*n)
     public static void main(String args[]){
         String fruits[] = {"PineApple", "Banana", "Mango"};
         String largest = fruits[0];
