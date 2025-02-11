@@ -1,4 +1,6 @@
 public class StringCompression {
+
+    //Time Complexity : O(n)
     public static String compress(String str) {
         if (str == null || str.isEmpty()) return str;
 
