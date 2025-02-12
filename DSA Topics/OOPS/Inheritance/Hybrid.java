@@ -1,4 +1,5 @@
 // Hybrid inheritance is the combination of Single and Multiple inheritance
+//Time Complexity: o(n)
 
 // Single inheritance: Child extends HumanBody
 class HumanBody {
