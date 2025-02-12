@@ -1,3 +1,5 @@
+//Time Complexity: O(1)
+
 class SecureBankAccount {
     private String accountHolder;
     private double balance;
