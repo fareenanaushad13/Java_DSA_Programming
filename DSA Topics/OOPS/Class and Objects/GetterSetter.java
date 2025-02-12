@@ -1,3 +1,5 @@
+//Time Complexity: O(1)
+
 // Employee class with private fields
 class Employee {
     private String name;
