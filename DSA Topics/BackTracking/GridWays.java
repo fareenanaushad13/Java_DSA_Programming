@@ -1,4 +1,6 @@
-import java.util.*;
+//Time Complexity: O(2^n+m)exponential time complexity
+//Right turns -  no. of cols = m
+//Down Turns -  no. of roes = n so (n+m)
 public class GridWays {
     public static int gridWays(int i,int j, int n,int m){
         //base case
