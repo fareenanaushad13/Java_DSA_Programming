@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+//Time Complexity: O(n^2)
 public class RatInMaze {
     public static boolean solveMazeUtil(int[][] maze, int x, int y, int[][] sol) {
         
