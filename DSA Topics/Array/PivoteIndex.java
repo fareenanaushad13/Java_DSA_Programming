@@ -1,3 +1,4 @@
+//Time Complexity : O(n)
 public class PivoteIndex {
     public static int pivotIndex(int[] nums) {
         int totalSum = 0, leftSum = 0;
