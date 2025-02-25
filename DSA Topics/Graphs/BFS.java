@@ -1,3 +1,4 @@
+//Time Complexity : O(V+E) //for BFS
 import java.util.*;
 public class BFS {
         static class Edge{
@@ -43,7 +44,7 @@ public class BFS {
 
         }
 
-        public static void bfs(ArrayList<Edge>[] graph){
+        public static void bfs(ArrayList<Edge>[] graph){ 
             Queue<Integer> q = new LinkedList<>();
             boolean vis[] = new boolean[graph.length];
             q.add(0); //source =0
