@@ -1,3 +1,4 @@
+//Time Complexity  - O(V*E)
 import java.util.*;
 
 public class BellmanFordAlgo {
@@ -19,16 +20,17 @@ public class BellmanFordAlgo {
         }
         graph[0].add(new Edge(0, 1, 2));
         graph[0].add(new Edge(0, 2, 4));
-        
+
         graph[1].add(new Edge(1, 2, -4));
-        
+
         graph[2].add(new Edge(2, 3, 2));
-        
+
         graph[3].add(new Edge(3, 4, 4));
-        
+
         graph[4].add(new Edge(4, 1, -1));
 
     }
+
     public static void bellmanFord(ArrayList<Edge> graph[], int src) {
         int dist[] = new int[graph.length]; // dist[i] -> src to i
         for (int i = 0; i < graph.length; i++) {
@@ -37,17 +39,17 @@ public class BellmanFordAlgo {
             }
         }
         int V = graph.length;
-        //algorithm - O(V)
+        // algorithm - O(V)
         for (int i = 0; i < V - 1; i++) {
-            //edges - O(E)
-            for(int j=0;j<graph.length;j++){
-                for(int k=0;k<graph[j].size();k++){
+            // edges - O(E)
+            for (int j = 0; j < graph.length; j++) {
+                for (int k = 0; k < graph[j].size(); k++) {
                     Edge e = graph[j].get(k);
                     int u = e.src;
                     int v = e.dest;
                     int wt = e.wt;
-                    //relaxation
-                    if (dist[u] != Integer.MAX_VALUE && dist[u] + wt < dist[v]) { 
+                    // relaxation
+                    if (dist[u] != Integer.MAX_VALUE && dist[u] + wt < dist[v]) {
                         dist[v] = dist[u] + wt;
                     }
                 }
@@ -58,6 +60,7 @@ public class BellmanFordAlgo {
         }
         System.out.println();
     }
+
     public static void main(String[] args) {
         int V = 5;
         @SuppressWarnings("unchecked")
