@@ -1,5 +1,6 @@
 import java.util.*;
 
+//Time Complexity : O(V+E)
 public class TopologicalSortingusingDFS {
     static class Edge {
         int src;
