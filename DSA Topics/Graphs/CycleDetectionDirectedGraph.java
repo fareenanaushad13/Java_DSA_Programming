@@ -1,5 +1,7 @@
 import java.util.*;
 
+//Time Complexity: O(V+E)
+
 public class CycleDetectionDirectedGraph {
     static class Edge {
         int src;
