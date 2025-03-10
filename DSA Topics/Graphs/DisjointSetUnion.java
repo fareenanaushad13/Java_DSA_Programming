@@ -1,4 +1,4 @@
-
+//Time Complexity: O(1)
 public class DisjointSetUnion {
     static int n = 7;
     static int par[] = new int[n]; 
