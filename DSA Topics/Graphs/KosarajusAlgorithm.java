@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Stack;
 
+//Time Complexity: O(V+E)
+
 public class KosarajusAlgorithm {
     static class Edge {
         int src;
