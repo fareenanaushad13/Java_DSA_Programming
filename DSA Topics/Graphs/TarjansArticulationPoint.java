@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+//Time Complexity: O(V+E)
 public class TarjansArticulationPoint {
     static class Edge {
         int src;
