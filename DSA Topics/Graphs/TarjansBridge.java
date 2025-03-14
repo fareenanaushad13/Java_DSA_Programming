@@ -1,4 +1,5 @@
 import java.util.*;
+//Time Complexity: O(V+E)
 
 public class TarjansBridge {
      static class Edge {
@@ -26,18 +27,16 @@ public class TarjansBridge {
 
         graph[2].add(new Edge(2, 0));
         graph[2].add(new Edge(2, 1));
-        graph[2].add(new Edge(2, 4));
 
         graph[3].add(new Edge(3, 0));
         graph[3].add(new Edge(3, 4));
-        graph[3].add(new Edge(3, 5));
+        //graph[3].add(new Edge(3, 5));
 
-        graph[4].add(new Edge(4, 2));
         graph[4].add(new Edge(4, 3));
-        graph[4].add(new Edge(4, 5));
+        //graph[4].add(new Edge(4, 5));
 
-        graph[5].add(new Edge(5, 3));
-        graph[5].add(new Edge(5, 4));
+        //graph[5].add(new Edge(5, 3));
+        //graph[5].add(new Edge(5, 4));
     }
 
     public static void dfs(ArrayList<Edge>[] graph, int curr, int par, int dt[], int low[], boolean vis[], int time) {
@@ -45,7 +44,7 @@ public class TarjansBridge {
         dt[curr] = low[curr] = ++time;
 
         for (int i = 0; i < graph[curr].size(); i++) {
-            Edge e = graph[curr].get(i);
+            Edge e = graph[curr].get(i); //e.src --> e.dest
             int neigh = e.dest;
 
             if (neigh == par) {
@@ -76,7 +75,7 @@ public class TarjansBridge {
         }
     }
     public static void main(String[] args) {
-        int V = 6;
+        int V = 5;
         @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V];
         
