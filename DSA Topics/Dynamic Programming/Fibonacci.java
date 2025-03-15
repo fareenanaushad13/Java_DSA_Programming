@@ -36,11 +36,11 @@ public class Fibonacci {
         int n=5;
         int f[] = new int [n+1]; //0,0,0,0
 
-        System.out.println(fib(n, f)); //recursion // O(2^n)
+        System.out.println(fib(n, f)); //recursion 
 
-        System.out.println(fibMemoization(n, f)); //O(n)
-        
-        System.out.println(fibTabulation(n)); //o(n)
+        System.out.println(fibMemoization(n, f)); 
+
+        System.out.println(fibTabulation(n)); 
 
     }
 }
