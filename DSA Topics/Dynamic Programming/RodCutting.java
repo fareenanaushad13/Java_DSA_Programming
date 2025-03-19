@@ -1,3 +1,4 @@
+//Time Complexity - O(n * totRod)
 public class RodCutting {
     public static int rodCutting(int length[], int price[], int totRod){
         int n = price.length;
