@@ -1,3 +1,4 @@
+//Time Complexity: O( n * m)
 import java.util.*;
 public class LongestIncreasingSubsequence {
     public static int lcs(int arr1[], int arr2[]) {
