@@ -1,4 +1,4 @@
-
+//O(n * m)
 public class WildcardMatching {
     public static boolean isMatch(String s, String p){
         int n = s.length();
