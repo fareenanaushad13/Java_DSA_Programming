@@ -1,7 +1,7 @@
-import java.util.Arrays;
+//time Complexity: O(n^2)
 
 public class CatalansNumber {
-    //Recursion
+    //Recursion ---> O(2^n)
     public static int catalanRec(int n){
         if(n == 0 || n ==1){
             return 1;
@@ -13,7 +13,7 @@ public class CatalansNumber {
         return ans;
     }
 
-    //Memoization
+    //Memoization ---> O(n^2)
     public static int catalanMemoization(int n, int dp[]){
         if(n == 0 || n ==1){
             return 1;
@@ -30,13 +30,29 @@ public class CatalansNumber {
 
     }
 
+    //Tabulation ---> O(n^2)
+    public static int catalanTab(int n){
+        int dp[] = new int[n+1];
+        dp[0] = 1;
+        dp[1] = 1;
+
+        for(int i=2;i<=n;i++){
+            for(int j=0;j<i;j++){
+                dp[i] += dp[j] * dp[i-j-1]; //ci = cj * ci-j-1
+            }
+        }
+        return dp[n];
+    }
+
 
     public static void main(String[] args) {
-        int n = 5;
-        System.out.println(catalanRec(n));
+        // int n = 5;
+        //System.out.println(catalanRec(n)); //recursion
 
-        int dp[] =  new int[n+1];
-        Arrays.fill(dp, -1);
-        System.out.println(catalanMemoization(4, dp));
+        // int dp[] =  new int[n+1];
+        // Arrays.fill(dp, -1);
+        // System.out.println(catalanMemoization(4, dp)); //Memoization
+
+        System.out.println(catalanTab(6)); //Tabulation
     }
 }
