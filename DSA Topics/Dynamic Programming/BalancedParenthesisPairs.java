@@ -1,3 +1,4 @@
+//Time Complexity: O(n)
 public class BalancedParenthesisPairs {
     static void printParenthesis(char str[], int pos, int n, int open, int close) {
         if(close == n)  {
