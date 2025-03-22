@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class CatalansNumber {
-    //Recursrion
+    //Recursion
     public static int catalanRec(int n){
         if(n == 0 || n ==1){
             return 1;
