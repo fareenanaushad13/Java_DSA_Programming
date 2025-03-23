@@ -27,7 +27,10 @@ public class ValidAnagram {
     }
     public static void main(String[] args) {
         String s = "far";
-        String t = "far";
+        String t = "far"; //true
+
+        // String s = "tulip";
+        // String t = "lipid"; //false
 
         System.out.println(isAnagram(s, t));
     }
