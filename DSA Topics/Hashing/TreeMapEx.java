@@ -1,5 +1,5 @@
 import java.util.TreeMap;
-
+//(O logn)
 public class TreeMapEx {
     public static void main(String[] args) {
         TreeMap<String, Integer> tm = new TreeMap<>();
@@ -9,6 +9,6 @@ public class TreeMapEx {
         tm.put("Us", 50);
         tm.put("Pakistan", 8);
 
-        System.out.println(tm); //Printed in key sorted order (A → Z)//Autralia-->China...
+        System.out.println(tm); //Printed in key sorted order (A → Z)//Autralia-->China....
     }
 }
