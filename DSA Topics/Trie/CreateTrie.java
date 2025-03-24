@@ -14,7 +14,7 @@ public class CreateTrie {
 
     public static Node root = new Node();
 
-    //inset a trie
+    //insert in trie
     public static void inset(String word){ //O(L)
         Node curr = root;
         for(int level = 0;level<word.length();level++){
