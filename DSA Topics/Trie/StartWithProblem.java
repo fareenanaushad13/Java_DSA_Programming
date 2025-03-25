@@ -1,6 +1,6 @@
 public class StartWithProblem {
      //create a Trie
-     static class Node{
+    static class Node{
         Node Children[] = new Node[26];
         boolean eow = false;
 

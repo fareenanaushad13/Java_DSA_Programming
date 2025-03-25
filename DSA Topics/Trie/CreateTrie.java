@@ -26,28 +26,10 @@ public class CreateTrie {
         }
         curr.eow = true;
     }
-
-    public static boolean startWith(String prefix){
-        Node curr = root;
-
-        for(int i=0;i<prefix.length();i++){
-            int idx = prefix.charAt(i) - 'a';
-            if(curr.Children[idx] == null){
-                return false;
-            }
-            curr = curr.Children[idx];
-        }
-        return true;
-    }
     public static void main(String[] args) {
-        String word[] = {"apple", "app", "mango", "man", "women"};
-        String prefix1 = "app";
-        String prefix2 = "moon";
-
+        String word[] = {"the", "a", "there", "their", "any", "thee"};
         for(int i=0;i<word.length;i++){
             inset(word[i]);
         }
-        System.out.println(startWith(prefix1));
-        System.out.println(startWith(prefix2));
     }
 }
