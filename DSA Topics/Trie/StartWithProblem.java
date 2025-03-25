@@ -1,7 +1,6 @@
-
-public class CreateTrie {
-    //create a Trie
-    static class Node{
+public class StartWithProblem {
+     //create a Trie
+     static class Node{
         Node Children[] = new Node[26];
         boolean eow = false;
 
