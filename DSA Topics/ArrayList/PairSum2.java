@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//Time Complexity: 2 pointer Approach --->  O(n)
 public class PairSum2 {
     public static boolean pairSum2(ArrayList<Integer> list , int target){
         int bp = -1;
