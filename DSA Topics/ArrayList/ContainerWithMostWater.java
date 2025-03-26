@@ -18,6 +18,8 @@ public class ContainerWithMostWater {
     //     return maxWater;
     // }
 
+    //Linear
+    //2 Pointer Approach ---- O(n)
     public static int storeWater(ArrayList<Integer> height){
         int maxWater = 0;
         int lp = 0;
