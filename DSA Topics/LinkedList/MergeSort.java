@@ -1,3 +1,4 @@
+//Time Complexity: O(nlogn)
 public class MergeSort {
     public static class Node {
         int data;
