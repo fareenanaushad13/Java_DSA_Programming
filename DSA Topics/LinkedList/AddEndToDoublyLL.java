@@ -1,4 +1,4 @@
-public class AddEnd {
+public class AddEndToDoublyLL {
     public class Node{
         int data;
         Node next;
@@ -37,7 +37,7 @@ public class AddEnd {
         }
 
         public static void main(String[] args) {
-            AddEnd ll = new AddEnd();
+            AddEndToDoublyLL ll = new AddEndToDoublyLL();
             ll.addLast(1);
             ll.addLast(2);
             ll.addLast(3);
