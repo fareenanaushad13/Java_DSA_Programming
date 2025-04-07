@@ -1,5 +1,6 @@
 import java.util.*;
 
+//Time Complexity: O(n)
 public class PushAtBottomOfStack {
 
     public static void pushBottom(Stack<Integer> s, int data){
