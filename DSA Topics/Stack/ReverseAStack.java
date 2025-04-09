@@ -1,3 +1,4 @@
+//Time Complexity: O(n)
 import java.util.Stack;
 
 public class ReverseAStack {
