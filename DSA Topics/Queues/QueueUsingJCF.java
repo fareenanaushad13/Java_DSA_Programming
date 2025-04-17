@@ -1,3 +1,4 @@
+//Time Complexy: O(1)
 import java.util.*;
 public class QueueUsingJCF {
     public static void main(String[] args) {
