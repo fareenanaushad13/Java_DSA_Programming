@@ -1,9 +1,11 @@
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class PriorityQueueInJCF {
     public static void main(String[] args) {
 
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        // PriorityQueue<Integer> pq = new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder()); // reverse order
 
         pq.add(3); // o(logn)
         pq.add(4);
